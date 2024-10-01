@@ -6,5 +6,9 @@
 
 ```https://innovations.kh.ua/images/formats/os/os1.php?t=[12,"pear"]```
 ## Parameters
-Avaliable parameters for objects types:
+```?t=[num,object_type]```
+* **num** - integer, from 0 to 12.
+* **object_type** - string, in folowing list.
+
+Avaliable parameters for object types:
 ```$names = ['apple','apricot','banana','broccoli','carrot','grape','kiwi','lemon','orange','pear','strawberry','tomato']```
