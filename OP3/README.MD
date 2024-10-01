@@ -1,7 +1,11 @@
 # OP3
-<img src = 'https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]'></a>  
+### Design
+<img src = 'https://innovations.kh.ua/images/formats/op/op3.php?t=[2,5,"orange"]'>
+
+### Image
+<img src = 'img/design.png'>
   
-<a href = 'https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]'>```https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]```</a>
+<a href = 'https://innovations.kh.ua/images/formats/op/op3.php?t=[2,5,"orange"]'>```https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]```</a>
 
 ## Parameters
 ```t=[[num1,num2,"object_type1"],[num2,"object_type2"]]```
