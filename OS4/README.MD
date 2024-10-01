@@ -18,17 +18,18 @@ Compare specific objects
 
 
 ### Heavy
-```["anchor.png","barrel.png","safe.png","weight.png"]```
+```["anchor.png","barrel.png","safe.png","weight.png"]```  
+
 <img src = "img/heavy/anchor.png">  <img src = "img/heavy/barrel.png">  <img src = "img/heavy/safe.png">  <img src = "img/heavy/weight.png">  
 
 
 ### High
-```["evergreen-tree.png","lighthouse.png","mountain.png","palmtree.png","roller-coaster.png","tree.png","water-tower.png"]```
+```["evergreen-tree.png","lighthouse.png","mountain.png","palmtree.png","roller-coaster.png","tree.png","water-tower.png"]```   
 
 <img src = "img/high/evergreen-tree.png">  <img src = "img/high/lighthouse.png">  <img src = "img/high/mountain.png">  <img src = "img/high/palmtree.png">  <img src = "img/high/roller-coaster.png">  <img src = "img/high/tree.png">  <img src = "img/high/water-tower.png">  
 
 
 ### Low
-```["cup.png","grass.png","stem-flower.png"]```
+```["cup.png","grass.png","stem-flower.png"]```  
 
 <img src = "img/low/cup.png">  <img src = "img/low/grass.png">  <img src = "img/low/stem-flower.png"> 
