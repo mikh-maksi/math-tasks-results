@@ -90,36 +90,39 @@ for ($i = 0; $i < $count; $i++) {
 
     // Пошук назви зображення за кодом
     switch ($shape_key) {
-        case "square":
+        case "s":
             $shape_name = "square";
             break;
-        case "rectangle":
+        case "r":
             $shape_name = "rectangle";
             break;
-        case "circle":
+        case "c":
             $shape_name = "circle";
             break;
-        case "triangle":
+        case "t":
             $shape_name = "triangle";
             break;
-        case "parallelogram":
+        case "p":
             $shape_name = "parallelogram";
             break;
-        case "trapezoid":
+        case "trp":
             $shape_name = "trapezoid";
             break;
-        case "hexagon":
+        case "h":
             $shape_name = "hexagon";
             break;
-        case "rhombus":
+        case "rh":
             $shape_name = "rhombus";
             break;
-        case "pentagon":
+        case "pt":
             $shape_name = "pentagon";
             break;
-        case "octagon":
+        case "oct":
             $shape_name = "octagon";
             break;
+        case "quad":
+                $shape_name = "parallelogram";
+                break;
         default:
             echo "Невідомий об'єкт: {$shape_key}";
             exit;

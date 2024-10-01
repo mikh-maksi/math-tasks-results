@@ -9,13 +9,4 @@
 * name1,name2,name3,name4 - name of object.
 
 ### Availble objects 
-* s (square)
-* r (rectangle)
-* c (circle)
-* t (triangle)
-* p (parallelogram)
-* trp (trapezoid)
-* h (hexagon)
-* rh (rhombus)
-* pt (pentagon)
-* quad (quadrilateral)
+```['circle','hexagon', 'octagon', 'parallelogram', 'pentagon', 'rectangle', 'rhombus', 'square', 'trapezoid', 'triangle']```
