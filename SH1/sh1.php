@@ -120,6 +120,9 @@ for ($i = 0; $i < $count; $i++) {
         case "oct":
             $shape_name = "octagon";
             break;
+        case "quad":
+                $shape_name = "parallelogram";
+                break;
         default:
             echo "Невідомий об'єкт: {$shape_key}";
             exit;

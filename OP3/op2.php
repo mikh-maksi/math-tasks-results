@@ -5,19 +5,15 @@ header("Content-type: image/png");
 if (isset($_GET['t'])) {
     $t = $_GET['t'];
 } else {
-    $t = '["apple"]';
+    $t = '[]';
 }
 $t = json_decode($t);
 
 // Присвоюємо змінні з розпакованого масиву
 $diff = $t[0]; // Кількість об'єктів зліва від плюса
 $sub = $t[1];  // Кількість об'єктів справа від плюса
-
-if (count($t)==3){
 $obj = $t[2];  // Об'єкт
-}else{
-    $obj= "apple";
-}
+
 // Можливі групи об'єктів і їх значення
 $names = [];
 $names['activities'] = ['football','going-to-school','walking-with-dog'];
