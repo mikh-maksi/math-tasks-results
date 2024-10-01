@@ -1,7 +1,11 @@
 # OP2
-<a href = 'https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]'><img src = 'img/design.png'></a>  
+### Дизайн
+<img src = 'img/design.png'>
+
+### Результат
+<img src = 'https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]'>
   
-```https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]```
+<a href = 'https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]'>```https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]```</a>
 ## Parameters
 ```t=[[num1,num2,"object_type1"],[num2,"object_type2"]]```
 * **num1** - integer.
