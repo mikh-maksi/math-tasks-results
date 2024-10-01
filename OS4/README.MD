@@ -13,6 +13,15 @@ Compare specific objects
 
 ### Light
 ```["baloon.png","feather.png","flower.png","leaf.png","needle.png","paper.png","snowflake.png"]```
+<img src = "baloon.png">  
+<img src = "feather.png">  
+<img src = "flower.png">  
+<img src = "leaf.png">  
+<img src = "needle.png">  
+<img src = "paper.png">  
+<img src = "snowflake.png">  
+
+
 ### Heavy
 ```["anchor.png","barrel.png","safe.png","weight.png"]```
 
