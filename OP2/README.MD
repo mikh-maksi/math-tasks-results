@@ -1,5 +1,5 @@
 # OP2
-<a href = 'https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]'><img src = 'https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]'></a>  
+<a href = 'https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]'><img src = 'img/design.png'></a>  
   
 ```https://innovations.kh.ua/images/formats/op/op2.php?t=[2,5,"orange"]```
 ## Parameters
