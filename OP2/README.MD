@@ -10,7 +10,7 @@
 ```t=[[num1,num2,"object_type1"],[num2,"object_type2"]]```
 * **num1** - integer.
 * **num2** - integer.
-* **numm1 + num2** - less than 9
+* **num1 + num2** - less than 9
 * **object_type** - string, in folowing list.
 
 ### Parameters for objects list
