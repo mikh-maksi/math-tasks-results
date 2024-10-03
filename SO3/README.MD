@@ -3,7 +3,7 @@ Compare specific objects
 
 ## Design
 
-<img src = "img/design.png">
+<img src = "img/design.png" width = 50>
 
 ## Link
 ```https://innovations.kh.ua/images/formats/op/op4.php?t=["object1","object2"]```
@@ -14,50 +14,50 @@ Compare specific objects
 ### Light
 ```["baloon.png","clip.png","feather.png","flower.png","leaf.png","needle.png","paper.png","snowflake.png"]```
 
-<img src = "img/light/baloon.png" width = 100>  <img src = "img/light/clip.png">  <img src = "img/light/feather.png">  <img src = "img/light/flower.png">  <img src = "img/light/leaf.png">  <img src = "img/light/needle.png">  <img src = "img/light/paper.png">  <img src = "img/light/snowflake.png">  
+<img src = "img/light/baloon.png" width = 50>  <img src = "img/light/clip.png" width = 50>  <img src = "img/light/feather.png" width = 50>  <img src = "img/light/flower.png" width = 50>  <img src = "img/light/leaf.png" width = 50>  <img src = "img/light/needle.png" width = 50>  <img src = "img/light/paper.png" width = 50>  <img src = "img/light/snowflake.png" width = 50>  
 
 
 ### Heavy
 ```["anchor.png","barrel.png","dumbell.png","luggage.png","safe.png","toolbox.png","truck-front.png","weight.png"]```  
 
-<img src = "img/heavy/anchor.png">  <img src = "img/heavy/barrel.png">  <img src = "img/heavy/dumbell.png">  <img src = "img/heavy/luggage.png">  <img src = "img/heavy/safe.png">  <img src = "img/heavy/toolbox.png">  <img src = "img/heavy/truck-front.png">  <img src = "img/heavy/weight.png">  
+<img src = "img/heavy/anchor.png" width = 50>  <img src = "img/heavy/barrel.png" width = 50>  <img src = "img/heavy/dumbell.png" width = 50>  <img src = "img/heavy/luggage.png" width = 50>  <img src = "img/heavy/safe.png" width = 50>  <img src = "img/heavy/toolbox.png" width = 50>  <img src = "img/heavy/truck-front.png" width = 50>  <img src = "img/heavy/weight.png" width = 50>  
 
 
 ### High
 ```["crane.png","giraffe.png","lighthouse.png","mountain.png","roller-coaster.png","skyscrapers.png","tree.png","water-tower.png"]```   
 
-<img src = "img/high/crane.png">  <img src = "img/high/giraffe.png">   <img src = "img/high/lighthouse.png">  <img src = "img/high/mountain.png">  <img src = "img/high/roller-coaster.png">  <img src = "img/high/skyscrapers.png">   <img src = "img/high/tree.png">  <img src = "img/high/water-tower.png">  
+<img src = "img/high/crane.png" width = 50>  <img src = "img/high/giraffe.png" width = 50>   <img src = "img/high/lighthouse.png" width = 50>  <img src = "img/high/mountain.png" width = 50>  <img src = "img/high/roller-coaster.png" width = 50>  <img src = "img/high/skyscrapers.png" width = 50>   <img src = "img/high/tree.png" width = 50>  <img src = "img/high/water-tower.png" width = 50>  
 
 
 ### Low
 ```["book.png","bucket.png","bush.png","cup.png","grass.png","rubber.png","stem-flower.png","toy.png"]```  
 
-<img src = "img/low/book.png">  <img src = "img/low/bucket.png">  <img src = "img/low/bush.png">  <img src = "img/low/cup.png">  <img src = "img/low/grass.png">  <img src = "img/low/rubber.png">  <img src = "img/low/stem-flower.png">    <img src = "img/low/toy.png">  
+<img src = "img/low/book.png" width = 50>  <img src = "img/low/bucket.png" width = 50>  <img src = "img/low/bush.png" width = 50>  <img src = "img/low/cup.png" width = 50>  <img src = "img/low/grass.png" width = 50>  <img src = "img/low/rubber.png" width = 50>  <img src = "img/low/stem-flower.png" width = 50>    <img src = "img/low/toy.png" width = 50>  
 
 ## Relate objects 
 
 ### Light
 ```["baloon.png","feather.png","flower.png","leaf.png","needle.png","paper.png","snowflake.png"]```
 
-<img src = "img/light/baloon.png">  <img src = "img/light/clip.png">  <img src = "img/light/feather.png">  <img src = "img/light/flower.png">  <img src = "img/light/leaf.png">  <img src = "img/light/needle.png">  <img src = "img/light/paper.png">  <img src = "img/light/snowflake.png">  
+<img src = "img/light/baloon.png" width = 50>  <img src = "img/light/clip.png" width = 50>  <img src = "img/light/feather.png" width = 50>  <img src = "img/light/flower.png" width = 50>  <img src = "img/light/leaf.png" width = 50>  <img src = "img/light/needle.png" width = 50>  <img src = "img/light/paper.png" width = 50>  <img src = "img/light/snowflake.png" width = 50>  
 
 
 ### Heavy
 ```["anchor.png","barrel.png","safe.png","weight.png"]```  
 
-<img src = "img/heavy/anchor.png">  <img src = "img/heavy/barrel.png">  <img src = "img/heavy/safe.png">  <img src = "img/heavy/weight.png">  
+<img src = "img/heavy/anchor.png" width = 50>  <img src = "img/heavy/barrel.png" width = 50>  <img src = "img/heavy/safe.png" width = 50>  <img src = "img/heavy/weight.png" width = 50>  
 
 
 ### High
 ```["evergreen-tree.png","lighthouse.png","mountain.png","palmtree.png","roller-coaster.png","tree.png","water-tower.png"]```   
 
-<img src = "img/high/evergreen-tree.png">  <img src = "img/high/lighthouse.png">  <img src = "img/high/mountain.png">  <img src = "img/high/palmtree.png">  <img src = "img/high/roller-coaster.png">  <img src = "img/high/tree.png">  <img src = "img/high/water-tower.png">  
+<img src = "img/high/evergreen-tree.png" width = 50>  <img src = "img/high/lighthouse.png" width = 50>  <img src = "img/high/mountain.png" width = 50>  <img src = "img/high/palmtree.png" width = 50>  <img src = "img/high/roller-coaster.png" width = 50>  <img src = "img/high/tree.png" width = 50>  <img src = "img/high/water-tower.png" width = 50>  
 
 
 ### Low
 ```["cup.png","grass.png","stem-flower.png"]```  
 
-<img src = "img/low/cup.png">  <img src = "img/low/grass.png">  <img src = "img/low/stem-flower.png"> 
+<img src = "img/low/cup.png" width = 50>  <img src = "img/low/grass.png" width = 50>  <img src = "img/low/stem-flower.png" width = 50> 
 
 
 
