@@ -1,6 +1,6 @@
 # OS 6
 Structurisation of objects  
-<img src = "img/design.png>
+<img src = "img/design.png|>
 
 
 ## Parameters:
