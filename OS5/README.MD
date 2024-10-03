@@ -14,10 +14,10 @@ Mesuaring Specific Objects
 ### Coins
 ```["dime-back.png,"dime-front.png","half-back.png","half-front.png","nickel-back.png","nickel-front.png","penny-back.png","penny-front.png","quarter-back.png","quarter-front.png"]```
 
-<img src = "img/coins/Dime-back.png" width = 50>  <img src = "img/coins/Dime-front.png" width = 50>    <img src = "img/coins/Half-back.png" width = 50>    <img src = "img/coins/Half-front.png" width = 50>  
-<img src = "img/coins/Nickel-back.png" width = 50>    <img src = "img/coins/Nickel-front.png" width = 50> 
-<img src = "img/coins/Penny-back.png" width = 50>    <img src = "img/coins/Penny-front.png" width = 50> 
-<img src = "img/coins/Quarter-back.png" width = 50>    <img src = "img/coins/Quarter-front.png" width = 50> 
+<img src = "img/coins/dime-back.png" width = 50>  <img src = "img/coins/dime-front.png" width = 50>    <img src = "img/coins/half-back.png" width = 50>    <img src = "img/coins/half-front.png" width = 50>  
+<img src = "img/coins/nickel-back.png" width = 50>    <img src = "img/coins/nickel-front.png" width = 50> 
+<img src = "img/coins/penny-back.png" width = 50>    <img src = "img/coins/penny-front.png" width = 50> 
+<img src = "img/coins/quarter-back.png" width = 50>    <img src = "img/coins/quarter-front.png" width = 50> 
 
 
 ### Mesearing objects
