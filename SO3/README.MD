@@ -3,7 +3,7 @@ Compare specific objects
 
 ## Design
 
-<img src = "img/design.png" width = 50>
+<img src = "img/design.png">
 
 ## Link
 ```https://innovations.kh.ua/images/formats/op/op4.php?t=["object1","object2"]```
