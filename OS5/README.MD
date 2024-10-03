@@ -8,9 +8,13 @@ Mesuaring Specific Objects
 ### Coins
 ```["DimeBack.png,"DimeFront.png","HalfBack.png","HalfFront.png","NickelBack.png","NickelFront.png","PennyBack.png","PennyFront.png","QuarterBack.png","QuarterFront.png"]```
 
-<img src = "img/coins/DimeBack.png" width = 50>  <img src = "img/coins/DimeFront.png" width = 50>  
+<img src = "img/coins/DimeBack.png" width = 50>  <img src = "img/coins/DimeFront.png" width = 50>    <img src = "img/coins/HalfFront.png" width = 50>    <img src = "img/coins/HalfFront.png" width = 50>  
+<img src = "img/coins/NickelFront.png" width = 50>    <img src = "img/coins/NickelFront.png" width = 50> 
+<img src = "img/coins/PennyFront.png" width = 50>    <img src = "img/coins/PennyFront.png" width = 50> 
+<img src = "img/coins/QuarterFront.png" width = 50>    <img src = "img/coins/QuarterFront.png" width = 50> 
 
-### Mesuaring objects
+
+### Mesearing objects
 #### Light
 ```["baloon.png","clip.png","feather.png","flower.png","leaf.png","needle.png","paper.png","snowflake.png"]```
 
