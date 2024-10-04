@@ -42,6 +42,7 @@ function find_object_group($obj, $names) {
 // Знайдемо групу для переданого об'єкта
 $object_group = find_object_group($obj, $names);
 
+
 if ($object_group !== null) {
     // Якщо групу знайдено, формуємо шлях до зображення
     $object_image_path = "../../images/flat48/".$object_group."/".$obj.".png";
