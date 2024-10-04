@@ -23,7 +23,7 @@ if (isset($_GET['t'])) {
 }
 
 // Можливі об'єкти та їх зображення
-$names['shapes'] = ['circle', 'hexagon', 'octagon', 'parallelogram', 'pentagon', 'rectangle', 'rhombus', 'square', 'trapezoid', 'triangle'];
+$names['shapes-filled'] = ['circle', 'hexagon', 'octagon', 'parallelogram', 'pentagon', 'rectangle', 'rhombus', 'square', 'trapezoid', 'triangle'];
 
 // Створення нового зображення залежно від кількості аргументів
 if ($count == 1) {
@@ -83,7 +83,7 @@ if ($count == 4) {
 
 // Логіка для рендеру об'єктів у чвертях
 $object_size = 160;
-$shape_path = $assets_path."/images/flat160/shapes/";
+$shape_path = $assets_path."/images/flat440/shapes-filled/";
 
 for ($i = 0; $i < $count; $i++) {
     $shape_key = $t[$i]; // Отримуємо код форми

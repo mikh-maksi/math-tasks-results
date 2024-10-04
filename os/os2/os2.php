@@ -15,7 +15,7 @@ $names = [];
 $names['activities'] = ['football', 'going-to-school', 'walking-with-dog'];
 $names['animals'] = ['bird', 'cat', 'dino', 'dog', 'duck', 'fish'];
 $names['balls'] = ['ball-blue', 'ball-green', 'ball-red', 'ball-yellow'];
-$names['fruits'] = ['apple', 'apricot', 'banana', 'broccoli', 'carrot', 'grape', 'kiwi', 'lemon', 'orange', 'pear', 'strawberry', 'tomato'];
+$names['fruits-vegetables'] = ['apple', 'apricot', 'banana', 'broccoli', 'carrot', 'grape', 'kiwi', 'lemon', 'orange', 'pear', 'strawberry', 'tomato'];
 $names['items'] = ['ball-beach', 'baloon', 'block', 'book', 'box', 'clay', 'dumbell', 'feather', 'flat', 'flower', 'house', 'mountain', 'paper', 'pencil', 'rubber', 'ruler', 'smartphone', 'star', 'string'];
 $names['sweets'] = ['cake', 'candy', 'cookie'];
 $names['vehicles'] = ['car-front', 'racing-car-blue', 'racing-car-green', 'racing-car-purple', 'racing-car-red', 'racing-car-yellow', 'simple-car-blue', 'simple-car-green', 'simple-car-purple', 'simple-car-red', 'simple-car-yellow'];
@@ -62,15 +62,16 @@ for ($m = 0; $m < count($t); $m++) {
 
     if ($object_group !== null) {
         // Якщо групу знайдено, формуємо шлях до зображення
-        $object_image_path = $assets_path."/images/flat48/" . $object_group . "/" . $object_name . ".png";
+        $object_image_path = $assets_path."/images/flat96/" . $object_group . "/" . $object_name . ".png";
         if (file_exists($object_image_path)) {
+            
             $object_image = imagecreatefrompng($object_image_path);
 
             for ($k = 0; $k < $value; $k++) {
                 $j = $k % $col;
                 $i = intdiv($k, $col);
                 // Змінено розмір об'єкта на 44x44
-                imagecopyresampled($back, $object_image, $x_start + (48 + 8) * $j + 280 * $jj, $y_start + (48 + 8) * $i + 280 * $ii, 0, 0, 48, 48, 48, 48);
+                imagecopyresampled($back, $object_image, $x_start + (48 + 8) * $j + 280 * $jj, $y_start + (48 + 8) * $i + 280 * $ii, 0, 0, 48, 48, 96, 96);
             }
         } else {
             echo "Помилка: Зображення для об'єкта '{$object_name}' не знайдено.";

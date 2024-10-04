@@ -7,7 +7,7 @@ $objects = [];
 $objects_name = [];
 
 for($i=0;$i<count($names);$i+=1){
-    $elemet = imagecreatefrompng($assets_path ."/images/flat128/".$names[$i].".png");
+    $elemet = imagecreatefrompng($assets_path ."/images/flat440/fruits-vegetables/".$names[$i].".png");
     array_push($objects,$elemet);
     $objects_name[$names[$i]]=$elemet;
 }

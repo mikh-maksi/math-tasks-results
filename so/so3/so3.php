@@ -3,6 +3,35 @@ $assets_path = "../../assets";
 
 header("Content-type: image/png");
 
+
+$names['activities']=['football','going-to-school','sleep','walking-with-dog'];
+$names['animals']=['bird','cat','dino','dog','duck','fish'];
+$names['cars']=['car-front','racing-car-blue','racing-car-green','racing-car-purple','racing-car-red','racing-car-yellow','simple-car-blue','simple-car-green','simple-car-purple','simple-car-red','simple-car-yellow'];
+$names['coins']=['dime-back','dime-front','half-back','half-front','nickel-back','nickel-front','penny-back','penny-front','quarter-back','quarter-front'];
+$names['fruits-vegetables']=['apple','apricot','banana','broccoli','carrot','grape','kiwi','lemon','orange','pear','strawberry','tomato'];
+$names['heavy']=['anchor','barrel','dumbbell','luggage','safe','toolbox','truck-front','weight'];
+$names['items']=['ball-beach','ball-blue','ball-green','ball-red','ball-yellow','balloon','block','book','box','clay','desk','dumbbell','evergreen-tree','feather','flat','flower','house','mountain','palmtree','paper','pencil','rubber','ruler','scale','smartphone','star','string','tree'];
+$names['light']=['balloon','clip','feather','flower','leaf','needle','paper','snowflake'];
+$names['shapes-filled']=['circle-background','circle','hexagon','octagon','parallelogram','pentagon','quadrilateral','rectangle','rhombus','right-triangle','short-isosceles-triangle','square','trapezoid','triangle'];
+$names['shapes-oulined']=['circle','hexagon','octagon','parallelogram','pentagon','quadrilateral','rectangle','rhombus','right-triangle','short-isosceles-triangle','square','trapezoid','triangle'];
+$names['shapes-phisical']=['circle','rectangle','square','triangle'];
+$names['short']=['book','bucket','bush','cup','grass','rubber','stem-flower','toy'];
+$names['sweets']=['cake','candy','cookie'];
+$names['tall']=['crane','giraffe','lighthouse','mountain','roller-coaster','skyscrapers','tree','water-tower'];
+
+
+function find_object_group($obj, $names) {
+    foreach ($names as $group => $objects) {
+        if (in_array($obj, $objects)) {
+            return $group; // Повертаємо назву групи, якщо об'єкт знайдений
+        }
+    }
+    return null; // Повертаємо null, якщо об'єкт не знайдено
+}
+
+// $object_group = find_object_group($obj, $names);
+
+
 // Перевірка наявності параметра t
 if (isset($_GET['t'])) { 
     $t = $_GET['t'];
@@ -16,6 +45,9 @@ $t = json_decode($t);
 // Перевірка наявності значень у масиві $t
 $image_name_1 = isset($t[0]) ? $t[0] : 'circle'; // Перший аргумент, за замовчуванням 'circle'
 $image_name_2 = isset($t[1]) ? $t[1] : 'circle'; // Другий аргумент, за замовчуванням 'circle'
+
+$object_group_1 = find_object_group($image_name_1, $names);
+$object_group_2 = find_object_group($image_name_2, $names);
 
 // Створення зображення розміром 560x280
 $width = 560;
@@ -52,12 +84,15 @@ imagettftext($back, $font_size, 0, $width - 7 - 32 / 2 - 7, 7 + 32 / 2 + 7, $bla
 // Функція для завантаження зображення
 function load_item_image($image_name) {
     global $assets_path;
-    $image_path = $assets_path."/images/flat160/compare/{$image_name}.png"; // Шлях до зображення
+    global $names;
+    $object_group = find_object_group($image_name, $names);
+
+    $image_path = $assets_path."/images/flat440/{$object_group}/{$image_name}.png"; // Шлях до зображення
     if (file_exists($image_path)) {
         return imagecreatefrompng($image_path); // Завантажуємо зображення
     } else {
         // Якщо зображення не знайдено, завантажуємо дефолтне зображення 'circle.png'
-        $default_image_path = $assets_path."/images/flat160/compare/circle.png";
+        $default_image_path = $assets_path."/images/flat440/shapes-filled/circle.png";
         if (file_exists($default_image_path)) {
             return imagecreatefrompng($default_image_path);
         } else {
