@@ -1,19 +1,25 @@
 <?php
 header("Content-type: image/png");
 
+$assets_path = "../../assets";
+
 // Отримуємо параметр 't' з запиту
 if (isset($_GET['t'])) {
     $t = $_GET['t'];
 } else {
-    $t = '[]';
+    $t = '["apple"]';
 }
 $t = json_decode($t);
 
 // Присвоюємо змінні з розпакованого масиву
 $diff = $t[0]; // Кількість об'єктів зліва від плюса
 $sub = $t[1];  // Кількість об'єктів справа від плюса
-$obj = $t[2];  // Об'єкт
 
+if (count($t)==3){
+$obj = $t[2];  // Об'єкт
+}else{
+    $obj= "apple";
+}
 // Можливі групи об'єктів і їх значення
 $names = [];
 $names['activities'] = ['football','going-to-school','walking-with-dog'];
@@ -40,7 +46,7 @@ $object_group = find_object_group($obj, $names);
 
 if ($object_group !== null) {
     // Якщо групу знайдено, формуємо шлях до зображення
-    $object_image_path = "../../images/flat48/".$object_group."/".$obj.".png";
+    $object_image_path = $assets_path."/images/flat48/".$object_group."/".$obj.".png";
     if (file_exists($object_image_path)) {
         $object_image = imagecreatefrompng($object_image_path);
     } else {
@@ -73,8 +79,8 @@ $objectWidth = 48;
 $objectHeight = 48;
 $padding = 32;
 $spacing = 8;
-$plusWidth = 13;
-$plusHeight = 13;
+$plusWidth = 14;
+$plusHeight = 14;
 
 // Створюємо зображення
 $back = imagecreatetruecolor($width, $height);
@@ -82,7 +88,7 @@ $gray = imagecolorallocate($back, 244, 247, 248);
 imagefill($back, 0, 0, $gray);
 $black = imagecolorallocate($back, 0, 0, 0);
 
-$plus = imagecreatefrompng("../../images/flat48/signs/plus.png");
+$plus = imagecreatefrompng($assets_path."/images/flat48/signs/plus.png");
 
 // Обчислюємо загальну ширину без відступів навколо плюса
 $totalWidth = $diff * $objectWidth + $sub * $objectWidth + 9 * $spacing + $plusWidth;

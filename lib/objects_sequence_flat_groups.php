@@ -1,6 +1,6 @@
 <?php
 
-// header("Content-type: image/png");
+header("Content-type: image/png");
 if (isset($_GET['t'])){$t = $_GET['t'];}else{$t='[]';}
 $t = json_decode($_GET['t']);
 
@@ -28,14 +28,22 @@ $range_j = [];
 for($j=0;$j<5;$j+=1){
     array_push($range_j,$j);
 }
-print_r($names);
 foreach ($names as $key_group => $value_group){
     $j=0;
     imagefttext($back, 16, 0, 7 +125*$i, 72+35*($j-1), $black, $font_file, $key_group);
-    
+
     foreach ($value_group as $key_img => $value_img){
+        // if (($i == 3)and (in_array($j,$range_j))){
+        //     $path = "../../images/flat48/".$key_group."/".$value_img.".png";
+        // } else{
+        //     $path = '../../images/flat48/fruits/apple.png';
+        // }
         $path = "../../images/flat48/".$key_group."/".$value_img.".png";
+        // echo ($path);
         $elem = imagecreatefrompng($path);
+        // $j = $k%$col;
+        // $i = intdiv($k,$col);
+        // imagefttext($back, 30, 0, 50 +250*$i, 50+50*$j, $black, $font_file, $k);
         imagefttext($back, 8, 0, 37 +125*$i, 72+35*$j, $black, $font_file, $value_img);
         try {
             imagecopyresampled($back , $elem,0+125*$i, 50+35*$j, 0, 0, 35, 35, 48, 48);
@@ -49,7 +57,16 @@ foreach ($names as $key_group => $value_group){
 }
 
 
-// imagepng($back);
-// imagedestroy($back);
+
+
+// for ($k=0;$k<count($objects);$k+=1){
+//     $j = $k%$col;
+//     $i = intdiv($k,$col);
+//     imagefttext($back, 30, 0, 50 +250*$i, 50+50*$j, $black, $font_file, $k);
+//     imagefttext($back, 20, 0, 100 +250*$i, 50+50*$j, $black, $font_file, $names[$k]);
+//     imagecopyresampled($back , $objects[$k],0+250*$i, 50*$j, 0, 0, 50, 50, 48, 48);
+// }
+imagepng($back);
+imagedestroy($back);
 
 ?>
