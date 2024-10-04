@@ -109,8 +109,8 @@ $object_width = 48;
 $object_height = 48;
 
 // Позиції для кожного об'єкта
-$x_offset = int(($width - ($sub * $object_width + ($sub - 1) * $gap)) / 2); // Центруємо по горизонталі
-$y_offset = int(($height - $object_height) / 2); // Центруємо по вертикалі
+$x_offset = (int)(($width - ($sub * $object_width + ($sub - 1) * $gap)) / 2); // Центруємо по горизонталі
+$y_offset = (int)(($height - $object_height) / 2); // Центруємо по вертикалі
 
 // Малюємо об'єкти з перекресленими та без
 for ($i = 0; $i < $sub; $i++) {
@@ -118,7 +118,7 @@ for ($i = 0; $i < $sub; $i++) {
     $has_delete = ($i >= $diff); // Якщо індекс >= diff, тоді об'єкт з хрестиком
 
     // Позиція для кожного об'єкта
-    $x = $x_offset + int($i * ($object_width + $gap)); // Визначаємо X-позицію
+    $x = $x_offset + (int)($i * ($object_width + $gap)); // Визначаємо X-позицію
     $y = $y_offset; // Центруємо по вертикалі
 
     // Малюємо об'єкт
