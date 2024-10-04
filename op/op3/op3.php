@@ -25,7 +25,7 @@ $names = [];
 $names['activities'] = ['football','going-to-school','walking-with-dog'];
 $names['animals'] = ['bird','cat','dino','dog','duck','fish'];
 $names['balls'] = ['ball-blue','ball-green','ball-red','ball-yellow'];
-$names['fruits'] = ['apple','apricot','banana','broccoli','carrot','grape','kiwi','lemon','orange','pear','strawberry','tomato'];
+$names['fruits-vegetables'] = ['apple','apricot','banana','broccoli','carrot','grape','kiwi','lemon','orange','pear','strawberry','tomato'];
 $names['items'] = ['ball-beach','baloon','block','book','box','clay','dumbell','feather','flat','flower','house','mountain','paper','pencil','rubber','ruler','smartphone','star','string'];
 $names['sweets'] = ['cake','candy','cookie'];
 $names['vehicles'] = ['car-front','racing-car-blue','racing-car-green','racing-car-purple','racing-car-red','racing-car-yellow','simple-car-blue','simple-car-green','simple-car-purple','simple-car-red','simple-car-yellow'];
@@ -46,7 +46,8 @@ $object_group = find_object_group($obj, $names);
 
 if ($object_group !== null) {
     // Якщо групу знайдено, формуємо шлях до зображення
-    $object_image_path = $assets_path."/images/flat48/".$object_group."/".$obj.".png";
+    $object_image_path = $assets_path."/images/flat96/".$object_group."/".$obj.".png";
+    
     if (file_exists($object_image_path)) {
         $object_image = imagecreatefrompng($object_image_path);
     } else {
@@ -77,6 +78,7 @@ $height = 112;
 // Параметри об'єктів
 $objectWidth = 48;
 $objectHeight = 48;
+
 $padding = 32;
 $spacing = 8;
 $plusWidth = 14;
@@ -88,7 +90,7 @@ $gray = imagecolorallocate($back, 244, 247, 248);
 imagefill($back, 0, 0, $gray);
 $black = imagecolorallocate($back, 0, 0, 0);
 
-$plus = imagecreatefrompng($assets_path."/images/flat48/signs/plus.png");
+$plus = imagecreatefrompng($assets_path."/images/flat96/signs/plus.png");
 
 // Обчислюємо загальну ширину без відступів навколо плюса
 $totalWidth = $diff * $objectWidth + $sub * $objectWidth + 9 * $spacing + $plusWidth;
@@ -102,14 +104,14 @@ for ($i = 0; $i < $diff; $i++) {
     $objectX = $currentX;
     $objectY = ($height - $objectHeight) / 2; // Центрування по вертикалі
 
-    imagecopy($back, $object_image, $objectX, $objectY, 0, 0, $objectWidth, $objectHeight);
+    imagecopyresampled($back, $object_image, $objectX, $objectY, 0, 0, $objectWidth, $objectHeight, imagesx($object_image),  imagesy($object_image));
 
     $currentX += $objectWidth + $spacing;
 }
 
 // Відображаємо плюсик
 $plusX = $currentX; 
-$plusY = ($height - 17) / 2;
+$plusY = (int)(($height - 17) / 2);
 
 imagecopyresampled($back, $plus, $plusX, $plusY, 0, 0, $plusWidth, $plusHeight, $plusWidth, $plusHeight);
 
@@ -121,7 +123,8 @@ for ($i = 0; $i < $sub; $i++) {
     $objectX = $currentX;
     $objectY = ($height - $objectHeight) / 2; // Центрування по вертикалі
 
-    imagecopy($back, $object_image, $objectX, $objectY, 0, 0, $objectWidth, $objectHeight);
+    // imagecopy($back, $object_image, $objectX, $objectY, 0, 0, $objectWidth, $objectHeight);
+    imagecopyresampled($back, $object_image, $objectX, $objectY, 0, 0, $objectWidth, $objectHeight, imagesx($object_image),  imagesy($object_image));
 
     $currentX += $objectWidth + $spacing;
 }

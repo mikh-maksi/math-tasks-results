@@ -38,9 +38,9 @@ $corner_radius = 8; // Заокруглені кути
 $gap = 16; // Відстань між елементами
 
 // Параметри зображень
-$plus_img = imagecreatefrompng($assets_path."/images/flat48/signs/plus_big.png");
-$eq_img = imagecreatefrompng($assets_path."/images/flat48/signs/eq.png");
-$word_img = imagecreatefrompng($assets_path."/images/flat48/signs/word.png");
+$plus_img = imagecreatefrompng($assets_path."/images/flat96/signs/plus_big.png");
+$eq_img = imagecreatefrompng($assets_path."/images/flat96/signs/eq.png");
+$word_img = imagecreatefrompng($assets_path."/images/flat96/signs/word.png");
 
 // Шрифт для тексту
 $font_file = $assets_path."/fonts/Inter.ttf";
@@ -83,7 +83,7 @@ draw_rounded_rectangle($back, $first_square_x, $center_y, $first_square_x + $squ
 $text_box = imagettfbbox($font_size, 0, $font_file, $t[0]);
 $text_x = $first_square_x + ($square_size - ($text_box[2] - $text_box[0])) / 2;
 $text_y = $center_y + ($square_size + ($text_box[1] - $text_box[7])) / 2;
-imagettftext($back, $font_size, 0, $text_x, $text_y, $black, $font_file, $t[0]);
+imagettftext($back, $font_size, 0, (int)$text_x, (int)$text_y, $black, $font_file, $t[0]);
 
 // Малюємо знак плюс
 $plus_x = $first_square_x + $square_size + $gap;
@@ -99,13 +99,13 @@ draw_rounded_rectangle($back, $second_square_x, $center_y, $second_square_x + $s
 $text_box = imagettfbbox($font_size, 0, $font_file, $t[1]);
 $text_x = $second_square_x + ($square_size - ($text_box[2] - $text_box[0])) / 2;
 $text_y = $center_y + ($square_size + ($text_box[1] - $text_box[7])) / 2;
-imagettftext($back, $font_size, 0, $text_x, $text_y, $black, $font_file, $t[1]);
+imagettftext($back, $font_size, 0, (int)$text_x, (int)$text_y, $black, $font_file, $t[1]);
 
 // Малюємо знак дорівнює
 $eq_x = $second_square_x + $square_size + $gap;
 list($eq_width, $eq_height) = resize_image_by_width($eq_img, 30);
 $eq_y = ($height - $eq_height) / 2; // Центруємо по вертикалі
-imagecopyresampled($back, $eq_img, $eq_x, $eq_y, 0, 0, $eq_width, $eq_height, imagesx($eq_img), imagesy($eq_img));
+imagecopyresampled($back, $eq_img, (int)$eq_x, (int)$eq_y, 0, 0, (int)$eq_width, (int)$eq_height, imagesx($eq_img), imagesy($eq_img));
 
 // Малюємо третій білий квадрат
 $third_square_x = $eq_x + $eq_width + $gap;
