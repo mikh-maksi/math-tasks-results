@@ -1,0 +1,12 @@
+Question Title: Subtraction Practice
+Question Type: Single Choice
+Question Text: If you start with 5 balloons and give away 2, how many balloons will you have left?
+Answer Options:
+A) 2
+B) 3 (Correct)
+C) 4
+D) 5
+Success Criteria List:
+- Solve subtraction problems within 10 accurately
+Resource Code: OP2
+Selected JSON Schema Fields: json { ""number1"": 5, ""number2"": 2, ""type"": ""balloon"" }
