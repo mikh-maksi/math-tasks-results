@@ -95,7 +95,12 @@ $object_size = 160;
 $shape_path = $assets_path."/images/flat440/shapes-filled/";
 
 for ($i = 0; $i < $count; $i++) {
-    $shape_key = $t[$i]; // Отримуємо код форми
+    $shape_key_array = explode('-',$t[$i]);
+
+    $shape_key = $shape_key_array[0]; // Отримуємо код форми
+    $shape_color = $shape_key_array[1]; //Отримуємо колір форми
+    $shape_size = $shape_key_array[2]; //Отримуємо розмір 
+    
     $shape_name = '';
 
     // Пошук назви зображення за кодом
@@ -137,6 +142,47 @@ for ($i = 0; $i < $count; $i++) {
             echo "Невідомий об'єкт: {$shape_key}";
             exit;
     }
+
+    // Визначення розміру об'єкту за кодом
+    switch ($shape_size) {
+        case "small":
+            $shape_size_path = "flat96";
+            $object_size = 96;
+            break;
+        case "big":
+            $shape_size_path = "flat440";
+            $object_size = 160;
+            break;
+        default:
+            echo "Невідомий розмір об'єкта: {$shape_size}";
+            exit;
+    }
+
+    // Визначення кольору об'єкту за кодом
+    switch ($shape_color) {
+        case "blue":
+            $shape_color_path = "blue";
+            break;
+        case "brown":
+            $shape_color_path = "brown";
+            break;
+        case "green":
+            $shape_color_path = "green";
+            break;
+        case "orange":
+            $shape_color_path = "orange";
+            break;
+        case "red":
+            $shape_color_path = "red";
+            break;
+        default:
+            echo "Невідомий колір об'єкта: {$shape_size}";
+            exit;
+    }
+
+
+    $shape_path = $assets_path."/images/".$shape_size_path."/shapes-filled/".$shape_color_path."/";    
+
 
     // Підготовка координат для рендерингу залежно від чверті
     switch ($count) {
@@ -199,7 +245,7 @@ for ($i = 0; $i < $count; $i++) {
 }
 
 
-// header("Content-type: image/png");
+header("Content-type: image/png");
 
 // Виведення зображення
 imagepng($back);
